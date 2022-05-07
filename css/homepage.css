@@ -1,77 +1,96 @@
 body {
-    margin: 0;
-  }
-  
-  .navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    font-family: 'Smooch Sans';
-    font-size: 1.2em;
-  }
-  
-  .navbar-item {
-    float: left;
-  }
-  
-  .navbar a {
-    display: block;
-    color: #d8d8d8;
-    text-align: center;
-    padding: 6px 13px;
-    text-decoration: none;
-    margin: 0.5rem;
-    border-radius: 10px;
-    transition: 0.4s;
-  }
-  
-  .navbar a:hover:not(.active) {
-    background-color: #111;
-  }
-  
-  .navbar a.active:hover {
-    background-color: #bb5f5f;
-  }
-  
-  .active {
-    background-color: #525252;
-  }
-  
-  div.navbar-options {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  div#navbar-left-title {
-    color: white;
-    width: fit-contents;
-    float: left;
-    position: absolute;
-    top:13px;
-    left:25px;
-  }
+  margin: 0;
+  font-family: "Open Sans";
+}
+
+nav.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: "Smooch Sans";
+  font-size: 1.2em;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+}
+
+.navbar-item {
+  float: left;
+}
+
+.navbar a {
+  display: block;
+  color: #d8d8d8;
+  text-align: center;
+  padding: 6px 13px;
+  text-decoration: none;
+  margin: 0.5rem;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.navbar a:hover:not(.active) {
+  background-color: #111;
+}
+
+.navbar a.active:hover {
+  background-color: #bb5f5f;
+}
+
+.active {
+  background-color: #525252;
+}
+
+div.navbar-options {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+div#navbar-left-title {
+  color: white;
+  width: 10rem;
+  -webkit-box-pack: center;
+  justify-content: center;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
 
 .styled-scrollbars {
   /* Foreground, Background */
   scrollbar-color: #a1a1a1 #b1b1b1;
 }
 .styled-scrollbars::-webkit-scrollbar {
-  width: 12px;border:solid 2px white; /* Mostly for vertical scrollbars */
-
+  width: 12px;
+  border: solid 2px white; /* Mostly for vertical scrollbars */
 }
-.styled-scrollbars::-webkit-scrollbar-thumb { /* Foreground */
-  background: #a1a1a1;border-radius:4px;
+.styled-scrollbars::-webkit-scrollbar-thumb {
+  /* Foreground */
+  background: #a1a1a1;
+  border-radius: 4px;
 }
 .styled-scrollbars::-webkit-scrollbar-thumb:hover {
-  background:#757575;border-radius:10px;
+  background: #757575;
+  border-radius: 10px;
 }
-.styled-scrollbars::-webkit-scrollbar-track { /* Background */
-  background: #b1b1b1; border-radius:10px;
+.styled-scrollbars::-webkit-scrollbar-track {
+  /* Background */
+  background: #b1b1b1;
+  border-radius: 10px;
 }
