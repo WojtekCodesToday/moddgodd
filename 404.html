@@ -1,179 +1,110 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            body {
-  background-color: #2F3242;
-}
-svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -250px;
-  margin-left: -400px;
-}
-.message-box {
-  height: 200px;
-  width: 380px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -100px;
-  margin-left: 50px;
-  color: #FFF;
-  font-family: Roboto;
-  font-weight: 300;
-}
-.message-box h1 {
-  font-size: 60px;
-  line-height: 46px;
-  margin-bottom: 40px;
-}
-.buttons-con .action-link-wrap {
-  margin-top: 40px;
-}
-.buttons-con .action-link-wrap a {
-  background: #68c950;
-  padding: 8px 25px;
-  border-radius: 4px;
-  color: #FFF;
-  font-weight: bold;
-  font-size: 14px;
-  transition: all 0.3s linear;
-  cursor: pointer;
-  text-decoration: none;
-  margin-right: 10px
-}
-.buttons-con .action-link-wrap a:hover {
-  background: #5A5C6C;
-  color: #fff;
-}
-
-#Polygon-1 , #Polygon-2 , #Polygon-3 , #Polygon-4 , #Polygon-4, #Polygon-5 {
-  animation: float 1s infinite ease-in-out alternate;
-}
-#Polygon-2 {
-  animation-delay: .2s; 
-}
-#Polygon-3 {
-  animation-delay: .4s; 
-}
-#Polygon-4 {
-  animation-delay: .6s; 
-}
-#Polygon-5 {
-  animation-delay: .8s; 
-}
-
-@keyframes float {
-	100% {
-    transform: translateY(20px);
-  }
-}
-@media (max-width: 450px) {
-  svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -250px;
-    margin-left: -190px;
-  }
-  .message-box {
-    top: 50%;
-    left: 50%;
-    margin-top: -100px;
-    margin-left: -190px;
-    text-align: center;
-  }
-}
-        </style>
-    </head>
-  <svg
-    width="380px"
-    height="500px"
-    viewBox="0 0 837 1045"
-    version="1.1"
-    id="svg8"
-    sodipodi:docname="realsvg.svg"
-    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
-    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:svg="http://www.w3.org/2000/svg"
-    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-  >
-    <defs id="defs12" />
-    <sodipodi:namedview
-      id="namedview10"
-      pagecolor="#ffffff"
-      bordercolor="#111111"
-      borderopacity="1"
-      inkscape:pageshadow="0"
-      inkscape:pageopacity="0"
-      inkscape:pagecheckerboard="1"
-      showgrid="false"
-      inkscape:zoom="1.564"
-      inkscape:cx="189.8977"
-      inkscape:cy="250"
-      inkscape:window-width="1920"
-      inkscape:window-height="986"
-      inkscape:window-x="-11"
-      inkscape:window-y="-11"
-      inkscape:window-maximized="1"
-      inkscape:current-layer="svg8"
-    />
-    <path
-      d="M 353,9 626.66403,170 V 487 L 353,642 79.335972,487 V 170 Z"
-      id="Polygon-1"
-      stroke="#007fb2"
-      stroke-width="6"
-      sketch:type="MSShapeGroup"
-      style="fill: none; fill-rule: evenodd; stroke: #a73d3d; stroke-opacity: 1"
-    />
-    <path
-      d="m 78.5,529 68.5,40.18641 v 79.12481 L 78.5,687 10,648.31122 v -79.12481 z"
-      id="Polygon-2"
-      stroke="#ef4a5b"
-      stroke-width="6"
-      sketch:type="MSShapeGroup"
-      style="fill: none; fill-rule: evenodd; stroke: #ca4754; stroke-opacity: 1"
-    />
-    <path
-      d="m 773,186 54,31.5387 v 62.09795 L 773,310 719,279.63665 V 217.5387 Z"
-      id="Polygon-3"
-      stroke="#795d9c"
-      stroke-width="6"
-      sketch:type="MSShapeGroup"
-      style="fill: none; fill-rule: evenodd; stroke: #e15353; stroke-opacity: 1"
-    />
-    <path
-      d="m 639,529 134,78.84676 V 763.09163 L 639,839 505,763.09163 V 607.84676 Z"
-      id="Polygon-4"
-      stroke="#f2773f"
-      stroke-width="6"
-      sketch:type="MSShapeGroup"
-      style="fill: none; fill-rule: evenodd; stroke: #de0f0f; stroke-opacity: 1"
-    />
-    <path
-      d="m 281,801 102,60.02528 V 979.21169 L 281,1037 179,979.21169 V 861.02528 Z"
-      id="Polygon-5"
-      stroke="#ff0000"
-      stroke-width="6"
-      sketch:type="MSShapeGroup"
-      style="fill: none; fill-rule: evenodd; stroke: #ff4444; stroke-opacity: 1"
-    />
-  </svg>
-
-  <div class="message-box">
-    <h1>404</h1>
-    <p>Page not found</p>
-    <div class="buttons-con">
-      <div class="action-link-wrap">
-        <a onclick="history.back(-1)" class="link-button link-back-button"
-          >Go Back</a
-        >
-        <a href="homepage.html" class="link-button">Go to Home Page</a>
+   <head>
+      <style>
+         body {
+         background-color: #2F3242;
+         }
+         svg {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         margin-top: -250px;
+         margin-left: -400px;
+         }
+         .message-box {
+         height: 200px;
+         width: 380px;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         margin-top: -100px;
+         margin-left: 50px;
+         color: #FFF;
+         font-family: Roboto;
+         font-weight: 300;
+         }
+         .message-box h1 {
+         font-size: 60px;
+         line-height: 46px;
+         margin-bottom: 40px;
+         }
+         .buttons-con .action-link-wrap {
+         margin-top: 40px;
+         }
+         .buttons-con .action-link-wrap a {
+         background: #68c950;
+         padding: 8px 25px;
+         border-radius: 4px;
+         color: #FFF;
+         font-weight: bold;
+         font-size: 14px;
+         transition: all 0.3s linear;
+         cursor: pointer;
+         text-decoration: none;
+         margin-right: 10px
+         }
+         .buttons-con .action-link-wrap a:hover {
+         background: #5A5C6C;
+         color: #fff;
+         }
+         #Polygon-1 , #Polygon-2 , #Polygon-3 , #Polygon-4 , #Polygon-4, #Polygon-5 {
+         animation: float 1s infinite ease-in-out alternate;
+         }
+         #Polygon-2 {
+         animation-delay: .2s; 
+         }
+         #Polygon-3 {
+         animation-delay: .4s; 
+         }
+         #Polygon-4 {
+         animation-delay: .6s; 
+         }
+         #Polygon-5 {
+         animation-delay: .8s; 
+         }
+         @keyframes float {
+         100% {
+         transform: translateY(20px);
+         }
+         }
+         @media (max-width: 450px) {
+         svg {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         margin-top: -250px;
+         margin-left: -190px;
+         }
+         .message-box {
+         top: 50%;
+         left: 50%;
+         margin-top: -100px;
+         margin-left: -190px;
+         text-align: center;
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <svg width="380px" height="500px" viewBox="0 0 837 1045" version="1.1" id="svg8" sodipodi:docname="realsvg.svg" inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+         <defs id="defs12"></defs>
+         <sodipodi:namedview id="namedview10" pagecolor="#ffffff" bordercolor="#111111" borderopacity="1" inkscape:pageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="1" showgrid="false" inkscape:zoom="1.564" inkscape:cx="189.8977" inkscape:cy="250" inkscape:window-width="1920" inkscape:window-height="986" inkscape:window-x="-11" inkscape:window-y="-11" inkscape:window-maximized="1" inkscape:current-layer="svg8"></sodipodi:namedview>
+         <path d="M 353,9 626.66403,170 V 487 L 353,642 79.335972,487 V 170 Z" id="Polygon-1" stroke="#007fb2" stroke-width="6" sketch:type="MSShapeGroup" style="fill: none; fill-rule: evenodd; stroke: #a73d3d; stroke-opacity: 1"></path>
+         <path d="m 78.5,529 68.5,40.18641 v 79.12481 L 78.5,687 10,648.31122 v -79.12481 z" id="Polygon-2" stroke="#ef4a5b" stroke-width="6" sketch:type="MSShapeGroup" style="fill: none; fill-rule: evenodd; stroke: #ca4754; stroke-opacity: 1"></path>
+         <path d="m 773,186 54,31.5387 v 62.09795 L 773,310 719,279.63665 V 217.5387 Z" id="Polygon-3" stroke="#795d9c" stroke-width="6" sketch:type="MSShapeGroup" style="fill: none; fill-rule: evenodd; stroke: #e15353; stroke-opacity: 1"></path>
+         <path d="m 639,529 134,78.84676 V 763.09163 L 639,839 505,763.09163 V 607.84676 Z" id="Polygon-4" stroke="#f2773f" stroke-width="6" sketch:type="MSShapeGroup" style="fill: none; fill-rule: evenodd; stroke: #de0f0f; stroke-opacity: 1"></path>
+         <path d="m 281,801 102,60.02528 V 979.21169 L 281,1037 179,979.21169 V 861.02528 Z" id="Polygon-5" stroke="#ff0000" stroke-width="6" sketch:type="MSShapeGroup" style="fill: none; fill-rule: evenodd; stroke: #ff4444; stroke-opacity: 1"></path>
+      </svg>
+      <div class="message-box">
+         <h1>404</h1>
+         <p>Page not found</p>
+         <div class="buttons-con">
+            <div class="action-link-wrap">
+               <a onclick="history.back(-1)" class="link-button link-back-button">Go Back</a>
+               <a href="homepage.html" class="link-button">Go to Home Page</a>
+            </div>
+         </div>
       </div>
-    </div>
-  </div>
+   </body>
 </html>
