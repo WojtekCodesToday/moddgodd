@@ -1,105 +1,166 @@
+/*HOMEPAGE.CSS */
+/* 
+ ___            _                   _    _                
+|   \  ___  __ | | __ _  _ _  __ _ | |_ (_) ___  _ _   ___
+| |) |/ -_)/ _|| |/ _` || '_|/ _` ||  _|| |/ _ \| ' \ (_-<
+|___/ \___|\__||_|\__,_||_|  \__,_| \__||_|\___/|_||_|/__/
+                            HERE
+*/
+
 body {
-  margin: 0;
-  font-family: "Open Sans";
-  background-color: #d5d5d5;
-  overflow: hidden;
+	margin: 0;
+	font-family: 'Whitney Book';
+	background-color: #d5d5d5;
+	overflow: hidden;
+}
+body::-webkit-scrollbar {
+	display: none;
 }
 
+/* 
+  _  _             ___            
+ | \| | __ _ __ __| _ ) __ _  _ _ 
+ | .` |/ _` |\ V /| _ \/ _` || '_|
+ |_|\_|\__,_| \_/ |___/\__,_||_|  
+              CSS HERE
+
+*/
+
 nav.navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  font-family: "Smooch Sans";
-  font-size: 1.2em;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  justify-content: space-between;
-  -webkit-box-pack: justify;
+	overflow: hidden;
+	background-color: #333333;
+
+
+	width: 100%;
+	font-family: "Smooch Sans";
+	font-size: 1.2em;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	justify-content: space-between;
+	-webkit-box-pack: justify;
+	align-content: center;
+	height: 8%;
 }
 
 .navbar-item {
-  float: left;
 }
 
 .navbar a {
-  display: block;
-  color: #d8d8d8;
-  text-align: center;
-  padding: 6px 13px;
-  text-decoration: none;
-  margin: 0.5rem;
-  border-radius: 10px;
-  transition: 0.4s;
+	display: block;
+	color: #d8d8d8;
+	text-align: center;
+	padding: 6px 13px;
+	text-decoration: none;
+	margin: 0.5rem;
+	border-radius: 10px;
+	transition: 0.4s;
 }
 
 .navbar a:hover:not(.active) {
-  background-color: #111;
+	background-color: #111;
 }
 
 .navbar a.active:hover {
-  background-color: #bb5f5f;
+	background-color: #bb5f5f;
 }
 
-.active {
-  background-color: #525252;
+.navbar-item.active {
+	background-color: #934141;
 }
 
 div.navbar-options {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .center {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  text-align: center;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	text-align: center;
 }
 
 div#navbar-left-title {
-  color: white;
-  width: 10rem;
-  -webkit-box-pack: center;
-  justify-content: center;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
+	color: red;
+	width: 10rem;
+	-webkit-box-pack: center;
+	justify-content: center;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
 }
-body::-webkit-scrollbar {
-  display: none;
+div#navbar-right-title {
+	color: white;
+	width: 10rem;
+	-webkit-box-pack: center;
+	justify-content: center;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
 }
+
+/*
+   ___            _              _     ___            _     
+  / __| ___  _ _ | |_  ___  _ _ | |_  | _ ) __ _  ___(_) __ 
+ | (__ / _ \| ' \|  _|/ -_)| ' \|  _| | _ \/ _` |(_-<| |/ _|
+  \___|\___/|_||_|\__|\___||_||_|\__| |___/\__,_|/__/|_|\__|
+             CSS - Contains layouts and scrollbar                                                          
+*/
+
+div#content {
+	height: fit-content;
+	width: auto;
+	height: 1000px;
+	padding: 1rem;
+	padding-left: 6rem;
+	padding-right: 6rem;
+}
+
 .styled-scrollbars {
-  padding: 20px;
-  margin-top: 52px;
-  height: 87.2vh;
-  padding-left: 6rem;
-  padding-right: 6rem;
-  width: -webkit-fill-available;
-  overflow-y: scroll;
+	width: calc(100vw - 0px);
+	overflow-y: auto;
+
+
+	height: calc(92vh - 2vw);
+
+
+	height: 92vh;
 }
+
 .styled-scrollbars::-webkit-scrollbar {
-  width: 12px;
-  border: none;
+	width: 12px;
+	border: none;
 }
+
 .styled-scrollbars::-webkit-scrollbar-thumb {
-  /* Foreground */
-  background: #747474;
-  border-radius: 4px;
+	/* Foreground */
+	background: #747474;
+	border-radius: 4px;
 }
+
 .styled-scrollbars::-webkit-scrollbar-thumb:hover {
-  background: #c54444;
-  border-radius: 4px;
+	background: #c54444;
+	border-radius: 4px;
 }
+
 .styled-scrollbars::-webkit-scrollbar-track {
-  /* Background */
-  background: #9a9a9a;
-  border-radius: 4px;
+	/* Background */
+	background: #9a9a9a;
+	border-radius: 4px;
+}
+
+/* 
+   _____               __    ___        _      
+  / / __|_ __  __ _ _ _\ \  | __|__ _ _| |_ ___
+ | |\__ \ '_ \/ _` | ' \| | | _/ _ \ ' \  _(_-<
+ | ||___/ .__/\__,_|_||_| | |_|\___/_||_\__/__/
+  \_\   |_|            /_/                     
+         CSS - Declares the spans for fonts
+*/
+
+span.WhitneyBold {
+	font-family: 'Whitney Semibold'
 }
