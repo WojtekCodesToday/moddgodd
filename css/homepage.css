@@ -9,7 +9,7 @@
 
 body {
 	margin: 0;
-	font-family: 'Whitney Book';
+	font-family: 'Corbert';
 	background-color: #d5d5d5;
 	overflow: hidden;
 }
@@ -29,8 +29,6 @@ body::-webkit-scrollbar {
 nav.navbar {
 	overflow: hidden;
 	background-color: #333333;
-
-
 	width: 100%;
 	font-family: "Smooch Sans";
 	font-size: 1.2em;
@@ -40,7 +38,11 @@ nav.navbar {
 	justify-content: space-between;
 	-webkit-box-pack: justify;
 	align-content: center;
-	height: 8%;
+	height: fit-content;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+	padding-right:1rem;
+	padding-left: 1rem;
 }
 
 .navbar-item {
@@ -84,7 +86,7 @@ div.navbar-options {
 }
 
 div#navbar-left-title {
-	color: red;
+	color: rgb(255, 255, 255);
 	width: 10rem;
 	-webkit-box-pack: center;
 	justify-content: center;
@@ -160,7 +162,9 @@ div#content {
   \_\   |_|            /_/                     
          CSS - Declares the spans for fonts
 */
-
-span.WhitneyBold {
-	font-family: 'Whitney Semibold'
+h1, h2, h3 {
+	font-family: 'Corbert B';
+}
+span.CorbertBold {
+	font-family: 'Corbert B'
 }
